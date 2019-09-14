@@ -1,30 +1,14 @@
 <template>
-    <div class="container">
-        <div>
-        <Nav-Bar></Nav-Bar>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Main Component</div>
 
-                    <div class="card-body">
-                        <div>
-                            <h1>Main Components</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <Wel-come></Wel-come>
 
 </template>
 
 <script>
-    import NavBar from './elements/NavBarComponent.vue'
+    import Welcome from './pages/Welcome.vue'
     export default {
         components: {
-            'Nav-Bar': NavBar,
+            'Wel-come': Welcome,
 
         },
         mounted() {

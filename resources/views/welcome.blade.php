@@ -78,9 +78,7 @@
     <body>
 
     <div id="app">
-
-        <welcome-page></welcome-page>
-
+        <main-app></main-app>
     </div>
 
     </body>

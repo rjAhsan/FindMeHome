@@ -182,5 +182,9 @@ text
     .img{
         z-index: 5000;
         position: relative;
+
+    }
+    .nb{
+        position: fixed;
     }
 </style>
