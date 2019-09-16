@@ -14,19 +14,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/lib/util/colors'
 import '@mdi/font/css/materialdesignicons.css'
-Vue.use(Vuetify, {
-    theme: {
-        primary: '#ffffff',
-        secondary: '#555965',
-        accent: '#ff9039',
-        dark: '#555965',
-        semi_dark: '#808d98',
-        medium: '#d4dadd',
-        semi_light: '#edf3f6',
-        light: '#eff3f9',
-        clean:'#ffffff',
-        error: '#ff9039'
-    }})
+Vue.use(Vuetify)
 
 import mainapp from './components/Main.vue'
 import Welcome from './components/pages/Welcome.vue'
@@ -57,5 +45,6 @@ Vue.component('welcome-page',Welcome);
 
 const app = new Vue({
     el: '#app',
+     vuetify : new Vuetify(),
 
 });

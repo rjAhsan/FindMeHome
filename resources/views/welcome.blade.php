@@ -77,17 +77,13 @@
     </head>
     <body>
 
-    <div id="app">
+    <v-app id="app">
+
         <main-app></main-app>
-    </div>
+
+    </v-app>
 
     </body>
 <script src="{{ asset('js/app.js') }}" ></script>
 
 </html>
-<script>
-    import Welcome from "../js/components/pages/Welcome";
-    export default {
-        components: {Welcome}
-    }
-</script>
