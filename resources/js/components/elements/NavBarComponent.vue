@@ -1,86 +1,16 @@
 <template>
 <nav class="img">
 
-    <v-toolbar dense app extended>
+    <v-toolbar dense app extended >
+
+        <v-btn light text x-large to="/Sale">Sale</v-btn>
+        <v-btn light text x-large to="/Rent">Rent</v-btn>
+        <v-btn light text x-large to="/Buy">Buy</v-btn>
+        <v-btn light text x-large to="/Agentfinder">Agenet-Finder</v-btn>
 
 
-            <div class="text-center">
-                <v-menu open-on-hover light top >
-                    <template v-slot:activator="{ on }">
-                        <v-btn
-                                large
-                                light
-                                v-on="on"
-                                text
-                        >
-                            Rent
-                        </v-btn>
-                    </template>
-
-                    <v-list>
-                        <v-list-item
-                                v-for="(item, index) in items"
-                                :key="index"
-                                @click="findname(item.title)"
-                        >
-                            <v-list-item-title>{{ item.title }}</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
-            </div>
 
             <div class="text-center">
-                <v-menu open-on-hover light top >
-                    <template v-slot:activator="{ on }">
-                        <v-btn
-large
-text
-                                light
-                                v-on="on"
-                        >
-                            Sell
-                        </v-btn>
-                    </template>
-
-                    <v-list>
-                        <v-list-item
-                                v-for="(item, index) in items"
-                                :key="index"
-                                @click="findname(item.title)"
-                        >
-                            <v-list-item-title>{{ item.title }}</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
-            </div>
-
-                    <div class="text-center">
-                        <v-menu open-on-hover light top  >
-                            <template v-slot:activator="{ on }">
-                                <v-btn
-                                        large
-                                        light
-                                        v-on="on"
-            text
-
-                                >
-                                    Buy
-                                </v-btn>
-                            </template>
-
-                            <v-list>
-                                <v-list-item
-                                        v-for="(item, index) in items"
-                                        :key="index"
-                                        @click="findname(item.title)"
-                                >
-                                    <v-list-item-title>{{ item.title }}</v-list-item-title>
-                                </v-list-item>
-                            </v-list>
-                        </v-menu>
-                    </div>
-
-        <div class="text-center">
             <v-menu open-on-hover light top  >
                 <template v-slot:activator="{ on }">
                     <v-btn
@@ -106,57 +36,60 @@ text
                 </v-list>
             </v-menu>
         </div>
+
         <v-divider
                 class="mx-1"
                 vertical
         ></v-divider>
         <v-spacer></v-spacer>
-        <logo-el></logo-el>
+        <logo-el>
 
+        </logo-el>
 
-
-
+        <v-spacer></v-spacer>
 
         <div class="flex-grow-1">
 
             </div>
 
 
-                <v-btn text samll>Advertise</v-btn>
-                <v-btn text samll>List your rentel</v-btn>
 
 
 
-            <v-btn >
-                <span>Login</span>
-                <v-icon right>mdi-human-child</v-icon>
+        <v-btnt x-large>
+                <login-el></login-el>
+        </v-btnt>
 
-            </v-btn>
+        <v-btn x-large>
+        <Signup-el ></Signup-el>
+        </v-btn >
 
-            <v-btn >
-                <v-icon left>mdi-power</v-icon>
-                <span>SingUp</span>
-            </v-btn>
-
-            <v-btn >
+            <v-btn  x-large>
                 <v-icon left>mdi-help</v-icon>
                 <span>help</span>
             </v-btn>
+
+
         </v-toolbar>
 
 
 
 </nav>
+
 </template>
 
 <script>
     import Logo from './Logo.vue';
     import Flex from './Flex.vue';
+    import Login from './Login.vue';
+    import Signup from './Signup.vue';
     export default {
 
         components:{
             'logo-el':Logo,
             'Fle-img':Flex,
+            'login-el':Login,
+            'Signup-el':Signup,
 
         },
         data: () => ({
@@ -174,6 +107,9 @@ text
         methods: {
             findname(refName) {
              console.log (refName);
+            },
+            login(){
+                console.log("Im Iron Man")
             }
         }
     }

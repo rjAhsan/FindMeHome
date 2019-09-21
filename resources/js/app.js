@@ -8,16 +8,25 @@ require('./bootstrap');
 
 import Vue from 'vue'
 window.Vue = require('vue')
-
+import VueRouter from 'vue-router';
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+import Routes from './route';
 
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/lib/util/colors'
 import '@mdi/font/css/materialdesignicons.css'
 Vue.use(Vuetify)
+Vue.use(VueRouter,VueAxios,axios);
+const router =new VueRouter({
+    routes:Routes,
+    mode: 'history'
+});
+
 
 import mainapp from './components/Main.vue'
-import Welcome from './components/pages/Welcome.vue'
+
 
 
 /**
@@ -35,7 +44,7 @@ import Welcome from './components/pages/Welcome.vue'
  // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
  Vue.component('main-app', mainapp);
-Vue.component('welcome-page',Welcome);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -43,8 +52,9 @@ Vue.component('welcome-page',Welcome);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
+ const app = new Vue({
     el: '#app',
      vuetify : new Vuetify(),
+     router:router,
 
 });

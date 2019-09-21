@@ -1,7 +1,7 @@
 <template>
 
         <v-img
-                src="c"
+                src="/images/Main/pic1.jpg"
                 lazy-src="/images/Main/pic1.jpg"
                 aspect-ratio="1"
                 class="grey lighten-2  "

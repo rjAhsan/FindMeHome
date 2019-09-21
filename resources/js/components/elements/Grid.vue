@@ -6,8 +6,10 @@
             min-hight="80%"
 
     >
+
+
         <v-card-text>
-        <div class="display-1 text-center text-uppercase indigo lighten-1 white--text">We have the most listings and constant updates.
+        <div class="display-1 text-center text-uppercase  ">We have the most listings and constant updates.
             So you’ll never miss out.
         </div>
         </v-card-text>
