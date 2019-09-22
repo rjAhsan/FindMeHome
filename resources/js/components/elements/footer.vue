@@ -1,50 +1,140 @@
 <template>
     <v-footer
-            dark
-            padless
+            light
+
     >
         <v-card
                 flat
                 tile
-                class="indigo lighten-1 white--text text-center"
+                class="grey darken-1  white--text text-center"
         >
-            <v-card-text>
-                <v-btn
-                        v-for="icon in icons"
-                        :key="icon"
-                        class="mx-4 white--text"
-                        icon
-                >
-                    <v-icon size="24px">{{ icon }}</v-icon>
-                </v-btn>
-            </v-card-text>
+            <v-layout row wrap class="ma-3 pa-3">
+                <v-flex xm12 md4>
 
-            <v-card-text class="white--text pt-0">
-                Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </v-card-text>
+<div class="display-2 text-bold my-3">
+    FindMeHouse.com
+</div>
+
+                    <div class="my-5">
+                    <v-icon color="red" x-large>
+                        mdi-map-marker
+                    </v-icon >
+                        <span class="display-1 text-center my-3">
+                            Pearl One,
+93-XYZ/I, YZ ABC Road,
+Gulberg 43, Lahore,
+Pakistan. </span>
+                    </div >
+                    <br>
+
+                    <div class="my-5">
+                        <v-icon color="blue" x-large>
+                            mdi-phone
+                        </v-icon >
+                        <span class="display-1 text-center my-3">
+
++923067395766 </span>
+                    </div >
+<br>
+                    <div class="my-5">
+                        <v-icon color="green" x-large>
+                            mdi-email
+                        </v-icon >
+                        <span class="display-1 text-center my-3">
+
+info@findmehouse.com </span>
+                    </div >
+                    <br>
+
+
+
+
+
+
+
+                    <v-btn
+                                    v-for="icon in icons"
+                                    :key="icon"
+                                    class="mx-4 my-3  blue white--text"
+                                    icon
+                                    x-large
+                                    fab
+                            >
+                                <v-icon >{{ icon }}</v-icon>
+                            </v-btn>
+
+
+
+<br>
+
+
+                </v-flex>
+                <v-flex xm12 md4>
+
+                    <div class="display-2 text-bold my-3">
+                        Company
+                    </div>
+
+<div v-for="link in links"
+                    :key="link" >
+                    <v-btn
+
+                            color="white"
+                          text
+                            class="my-2"
+                            x-large
+                    >
+
+                        <h4 class="text-uppercase  ">
+                            {{ link }}
+                        </h4>
+                    </v-btn>
+</div>
+
+
+
+                </v-flex>
+                <v-flex xm12 md4>
+
+                    <div class="display-2 text-bold my-3">
+                     Connect
+                    </div>
+
+
+                                <v-btn
+                                        v-for="link in linkss"
+                                        :key="link"
+                                        color="white"
+                                        text
+                                        rounded
+                                        class="my-2"
+                                        x-large
+                                >
+
+    <h4 class="text-uppercase ">
+                                    {{ link }}
+    </h4>
+                                </v-btn>
+
+
+
+
+                </v-flex>
+                <v-col
+                        class=" blue my-3 py-4 text-center white--text"
+                        cols="12"
+                        dark
+                >
+                    <strong><h3>Copyright 2009 - 2022 FindMeHouse.com
+                    All Rights Are Reserved.
+                    Official Home Partners
+                    </h3></strong>
+                </v-col>
+            </v-layout>
+
 
         </v-card>
-        <v-row
-                justify="center"
-                no-gutters
-        >
-            <v-btn
-                    v-for="link in links"
-                    :key="link"
-                    color="white"
-                    text
-                    rounded
-                    class="my-2"
-            >
-                {{ link }}
-            </v-btn>
-            <v-col
-                    class="primary lighten-2 py-4 text-center white--text"
-                    cols="12"
-            >
-                {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-            </v-col>
-        </v-row>
+
     </v-footer>
 </template>
 
@@ -55,9 +145,18 @@
                 'mdi-facebook',
                 'mdi-twitter',
                 'mdi-google-plus',
-                'mdi-linkedin',
                 'mdi-instagram',
             ],
+            linkss: [
+                'News',
+                'Blogs',
+                'Forum',
+                'Expo',
+                'Add Property',
+
+            ],
+
+
             links: [
                 'Home',
                 'About Us',

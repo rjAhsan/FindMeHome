@@ -16,16 +16,16 @@
                         <v-row>
 
                             <v-col cols="12" sm="6" m="4">
-                                <v-text-field label="First-Name*"  required prepend-icon="mdi-email" v-model="name"></v-text-field>
+                                <v-text-field label="First-Name*"  required prepend-icon="mdi-human-child" v-model="fname"></v-text-field>
                             </v-col>
 
                             <v-col cols="12" sm="6" m="4">
-                                <v-text-field label="Last-Name*" required prepend-icon="mdi-email" v-model="name"></v-text-field>
+                                <v-text-field label="Last-Name*" required prepend-icon="mdi-human-child" v-model="lname"></v-text-field>
                             </v-col>
 
 
                             <v-col cols="12">
-                                <v-text-field label="PhoneNumber*" type="number" required prepend-icon="mdi-email" v-model="PhoneNumber"></v-text-field>
+                                <v-text-field label="PhoneNumber*" type="number" required prepend-icon="mdi-phone" v-model="PhoneNumber"></v-text-field>
                             </v-col>
 
 
@@ -37,11 +37,11 @@
                             </v-col>
 
                             <v-col cols="12">
-                                <v-text-field label="Password*" type="password" required prepend-icon="mdi-key" v-model="password"></v-text-field>
+                                <v-text-field label="Password*" type="password" required prepend-icon="mdi-account-key" v-model="password"></v-text-field>
                             </v-col>
 
                             <v-col cols="12">
-                                <v-text-field label="Conform-Password*" type="password" required prepend-icon="mdi-key" v-model="password"></v-text-field>
+                                <v-text-field label="Conform-Password*" type="password" required prepend-icon="mdi-key-change" v-model="password"></v-text-field>
                             </v-col>
 
 

@@ -13,7 +13,8 @@
             So you’ll never miss out.
         </div>
         </v-card-text>
-            <v-layout row wrap class="ma-3 pa-3">
+
+        <v-layout row wrap class="ma-3 pa-3">
             <v-flex xm12 md4>
                 <v-card
                         class="mx-2 px-2"
@@ -106,9 +107,7 @@
 
                     </v-card>
                 </v-flex>
-            </v-layout>
-
-
+       </v-layout>
 
     </v-card>
     </v-container>

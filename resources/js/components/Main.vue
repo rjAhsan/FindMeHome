@@ -6,7 +6,7 @@
 
         </div>
         <slider-el></slider-el>
-        <footer-el class="py-4"></footer-el>
+        <footer-el class="py-2"></footer-el>
 </div>
 </template>
 

@@ -2006,7 +2006,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2345,11 +2344,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       colors: ['indigo', 'warning', 'pink darken-2', 'red lighten-1', 'deep-purple accent-4'],
-      slides: ['First', 'Second', 'Third', 'Fourth', 'Fifth']
+      slides: ['First-Agencies', 'Second-Agencies', 'Third-Agencies', 'Fourth-Agencies', 'Fifth-Agencies']
     };
   }
 });
@@ -2415,10 +2426,101 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      icons: ['mdi-facebook', 'mdi-twitter', 'mdi-google-plus', 'mdi-linkedin', 'mdi-instagram'],
+      icons: ['mdi-facebook', 'mdi-twitter', 'mdi-google-plus', 'mdi-instagram'],
+      linkss: ['News', 'Blogs', 'Forum', 'Expo', 'Add Property'],
       links: ['Home', 'About Us', 'Team', 'Services', 'Blog', 'Contact Us']
     };
   }
@@ -2479,8 +2581,123 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Buy"
+  data: function data() {
+    return {
+      Lahores: ['DHA', 'Bhari Town', 'Bahri Orchad', 'Lake city', 'StateLife Hosuing Socity', 'LDA AVENU', 'DHA RAHBER', 'Paragon city', 'Riwand Road', 'Gulberg'],
+      Islamabads: ['DHA Defence', 'Gulberg', 'B-17', 'Bahria Town', 'D-12', 'G-14', 'I-12', 'I-14', 'F-17', 'G-13'],
+      Karchis: ['Bahria Town Karachi', 'DHA Defence', 'Scheme 33', 'DHA City Karachi', 'Gadap Town', 'Bin Qasim Town', 'Scheme 45 ', 'Gulistan-e-Jauhar', 'Naya Nazimaba', 'Gulshan-e-Mehmood']
+    };
+  }
 });
 
 /***/ }),
@@ -2539,7 +2756,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../elements/carousel */ "./resources/js/components/elements/carousel.vue");
 /* harmony import */ var _elements_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../elements/footer */ "./resources/js/components/elements/footer.vue");
 /* harmony import */ var _elements_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../elements/Grid */ "./resources/js/components/elements/Grid.vue");
-//
 //
 //
 //
@@ -38694,7 +38910,7 @@ var render = function() {
       _vm._v(" "),
       _c("slider-el"),
       _vm._v(" "),
-      _c("footer-el", { staticClass: "py-4" })
+      _c("footer-el", { staticClass: "py-2" })
     ],
     1
   )
@@ -39502,14 +39718,14 @@ var render = function() {
                                 attrs: {
                                   label: "First-Name*",
                                   required: "",
-                                  "prepend-icon": "mdi-email"
+                                  "prepend-icon": "mdi-human-child"
                                 },
                                 model: {
-                                  value: _vm.name,
+                                  value: _vm.fname,
                                   callback: function($$v) {
-                                    _vm.name = $$v
+                                    _vm.fname = $$v
                                   },
-                                  expression: "name"
+                                  expression: "fname"
                                 }
                               })
                             ],
@@ -39524,14 +39740,14 @@ var render = function() {
                                 attrs: {
                                   label: "Last-Name*",
                                   required: "",
-                                  "prepend-icon": "mdi-email"
+                                  "prepend-icon": "mdi-human-child"
                                 },
                                 model: {
-                                  value: _vm.name,
+                                  value: _vm.lname,
                                   callback: function($$v) {
-                                    _vm.name = $$v
+                                    _vm.lname = $$v
                                   },
-                                  expression: "name"
+                                  expression: "lname"
                                 }
                               })
                             ],
@@ -39547,7 +39763,7 @@ var render = function() {
                                   label: "PhoneNumber*",
                                   type: "number",
                                   required: "",
-                                  "prepend-icon": "mdi-email"
+                                  "prepend-icon": "mdi-phone"
                                 },
                                 model: {
                                   value: _vm.PhoneNumber,
@@ -39592,7 +39808,7 @@ var render = function() {
                                   label: "Password*",
                                   type: "password",
                                   required: "",
-                                  "prepend-icon": "mdi-key"
+                                  "prepend-icon": "mdi-account-key"
                                 },
                                 model: {
                                   value: _vm.password,
@@ -39615,7 +39831,7 @@ var render = function() {
                                   label: "Conform-Password*",
                                   type: "password",
                                   required: "",
-                                  "prepend-icon": "mdi-key"
+                                  "prepend-icon": "mdi-key-change"
                                 },
                                 model: {
                                   value: _vm.password,
@@ -39708,43 +39924,58 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "v-carousel",
+    "v-card",
     {
-      attrs: {
-        cycle: "",
-        height: "400",
-        "hide-delimiter-background": "",
-        "show-arrows-on-hover": ""
-      }
+      staticClass: "mx-2 px-2 py-4",
+      attrs: { "max-width": "100%", "min-hight": "80%" }
     },
-    _vm._l(_vm.slides, function(slide, i) {
-      return _c(
-        "v-carousel-item",
-        { key: i },
-        [
-          _c(
-            "v-sheet",
-            { attrs: { color: _vm.colors[i], height: "100%" } },
+    [
+      _c("div", { staticClass: "text-center display-3 text-bold" }, [
+        _vm._v("Titanium Agencies")
+      ]),
+      _vm._v(" "),
+      _c(
+        "v-carousel",
+        {
+          staticClass: "py-3",
+          attrs: {
+            cycle: "",
+            height: "250",
+            "hide-delimiter-background": "",
+            "show-arrows-on-hover": ""
+          }
+        },
+        _vm._l(_vm.slides, function(slide, i) {
+          return _c(
+            "v-carousel-item",
+            { key: i },
             [
               _c(
-                "v-row",
-                {
-                  staticClass: "fill-height",
-                  attrs: { align: "center", justify: "center" }
-                },
+                "v-sheet",
+                { attrs: { color: _vm.colors[i], height: "100%" } },
                 [
-                  _c("div", { staticClass: "display-3" }, [
-                    _vm._v(_vm._s(slide) + " Slide")
-                  ])
-                ]
+                  _c(
+                    "v-row",
+                    {
+                      staticClass: "fill-height",
+                      attrs: { align: "center", justify: "center" }
+                    },
+                    [
+                      _c("div", { staticClass: "display-3" }, [
+                        _vm._v(_vm._s(slide) + " Slide")
+                      ])
+                    ]
+                  )
+                ],
+                1
               )
             ],
             1
           )
-        ],
+        }),
         1
       )
-    }),
+    ],
     1
   )
 }
@@ -39772,76 +40003,218 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-footer",
-    { attrs: { dark: "", padless: "" } },
+    { attrs: { light: "" } },
     [
       _c(
         "v-card",
         {
-          staticClass: "indigo lighten-1 white--text text-center",
+          staticClass: "grey darken-1  white--text text-center",
           attrs: { flat: "", tile: "" }
         },
         [
           _c(
-            "v-card-text",
-            _vm._l(_vm.icons, function(icon) {
-              return _c(
-                "v-btn",
+            "v-layout",
+            { staticClass: "ma-3 pa-3", attrs: { row: "", wrap: "" } },
+            [
+              _c(
+                "v-flex",
+                { attrs: { xm12: "", md4: "" } },
+                [
+                  _c("div", { staticClass: "display-2 text-bold my-3" }, [
+                    _vm._v("\n    FindMeHouse.com\n")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "my-5" },
+                    [
+                      _c("v-icon", { attrs: { color: "red", "x-large": "" } }, [
+                        _vm._v(
+                          "\n                        mdi-map-marker\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "display-1 text-center my-3" },
+                        [
+                          _vm._v(
+                            "\n                            Pearl One,\n93-XYZ/I, YZ ABC Road,\nGulberg 43, Lahore,\nPakistan. "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "my-5" },
+                    [
+                      _c(
+                        "v-icon",
+                        { attrs: { color: "blue", "x-large": "" } },
+                        [
+                          _vm._v(
+                            "\n                            mdi-phone\n                        "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "display-1 text-center my-3" },
+                        [_vm._v("\n\n+923067395766 ")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "my-5" },
+                    [
+                      _c(
+                        "v-icon",
+                        { attrs: { color: "green", "x-large": "" } },
+                        [
+                          _vm._v(
+                            "\n                            mdi-email\n                        "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "display-1 text-center my-3" },
+                        [_vm._v("\n\ninfo@findmehouse.com ")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _vm._l(_vm.icons, function(icon) {
+                    return _c(
+                      "v-btn",
+                      {
+                        key: icon,
+                        staticClass: "mx-4 my-3  blue white--text",
+                        attrs: { icon: "", "x-large": "", fab: "" }
+                      },
+                      [_c("v-icon", [_vm._v(_vm._s(icon))])],
+                      1
+                    )
+                  }),
+                  _vm._v(" "),
+                  _c("br")
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "v-flex",
+                { attrs: { xm12: "", md4: "" } },
+                [
+                  _c("div", { staticClass: "display-2 text-bold my-3" }, [
+                    _vm._v(
+                      "\n                        Company\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._l(_vm.links, function(link) {
+                    return _c(
+                      "div",
+                      { key: link },
+                      [
+                        _c(
+                          "v-btn",
+                          {
+                            staticClass: "my-2",
+                            attrs: { color: "white", text: "", "x-large": "" }
+                          },
+                          [
+                            _c("h4", { staticClass: "text-uppercase  " }, [
+                              _vm._v(
+                                "\n                            " +
+                                  _vm._s(link) +
+                                  "\n                        "
+                              )
+                            ])
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  })
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "v-flex",
+                { attrs: { xm12: "", md4: "" } },
+                [
+                  _c("div", { staticClass: "display-2 text-bold my-3" }, [
+                    _vm._v(
+                      "\n                     Connect\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._l(_vm.linkss, function(link) {
+                    return _c(
+                      "v-btn",
+                      {
+                        key: link,
+                        staticClass: "my-2",
+                        attrs: {
+                          color: "white",
+                          text: "",
+                          rounded: "",
+                          "x-large": ""
+                        }
+                      },
+                      [
+                        _c("h4", { staticClass: "text-uppercase " }, [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(link) +
+                              "\n    "
+                          )
+                        ])
+                      ]
+                    )
+                  })
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
                 {
-                  key: icon,
-                  staticClass: "mx-4 white--text",
-                  attrs: { icon: "" }
+                  staticClass: " blue my-3 py-4 text-center white--text",
+                  attrs: { cols: "12", dark: "" }
                 },
                 [
-                  _c("v-icon", { attrs: { size: "24px" } }, [
-                    _vm._v(_vm._s(icon))
+                  _c("strong", [
+                    _c("h3", [
+                      _vm._v(
+                        "Copyright 2009 - 2022 FindMeHouse.com\n                    All Rights Are Reserved.\n                    Official Home Partners\n                    "
+                      )
+                    ])
                   ])
-                ],
-                1
+                ]
               )
-            }),
+            ],
             1
-          ),
-          _vm._v(" "),
-          _c("v-card-text", { staticClass: "white--text pt-0" }, [
-            _vm._v(
-              "\n            Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n        "
-            )
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-row",
-        { attrs: { justify: "center", "no-gutters": "" } },
-        [
-          _vm._l(_vm.links, function(link) {
-            return _c(
-              "v-btn",
-              {
-                key: link,
-                staticClass: "my-2",
-                attrs: { color: "white", text: "", rounded: "" }
-              },
-              [_vm._v("\n            " + _vm._s(link) + "\n        ")]
-            )
-          }),
-          _vm._v(" "),
-          _c(
-            "v-col",
-            {
-              staticClass: "primary lighten-2 py-4 text-center white--text",
-              attrs: { cols: "12" }
-            },
-            [
-              _vm._v(
-                "\n            " + _vm._s(new Date().getFullYear()) + " — "
-              ),
-              _c("strong", [_vm._v("Vuetify")])
-            ]
           )
         ],
-        2
+        1
       )
     ],
     1
@@ -39926,18 +40299,189 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "v-container",
+    { staticClass: "my-3" },
+    [
+      _c(
+        "v-card",
+        {
+          staticClass: "mx-2 px-2",
+          attrs: { "max-width": "100%", "min-hight": "80%" }
+        },
+        [
+          _c("v-card-text", [
+            _c(
+              "div",
+              { staticClass: "display-2 text-center  font-weight-bold " },
+              [_vm._v("\n                Popular Locations\n            ")]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-layout",
+            { staticClass: "ma-3 pa-3", attrs: { row: "", wrap: "" } },
+            [
+              _c(
+                "v-flex",
+                { attrs: { xm12: "", md4: "" } },
+                [
+                  _c(
+                    "v-card",
+                    {
+                      staticClass: "mx-2 px-2",
+                      attrs: { "max-width": "100%", "min-hight": "80%" }
+                    },
+                    [
+                      _c("v-card-text", [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "display-1 font-weight-bold text-left"
+                          },
+                          [
+                            _vm._v(
+                              "\n                            Most Popular Locations for Sale in Lahore\n                        "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("hr")
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.Lahores, function(Lhr, i) {
+                        return _c(
+                          "v-card-text",
+                          { key: i },
+                          [
+                            _c("v-btn", { attrs: { text: "", to: "" } }, [
+                              _c("h5", [
+                                _vm._v(
+                                  _vm._s(Lhr) + "\n                        "
+                                )
+                              ])
+                            ])
+                          ],
+                          1
+                        )
+                      })
+                    ],
+                    2
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-flex",
+                { attrs: { xm12: "", md4: "" } },
+                [
+                  _c(
+                    "v-card",
+                    {
+                      staticClass: "mx-2 px-2",
+                      attrs: { "max-width": "100%", "min-hight": "80%" }
+                    },
+                    [
+                      _c("v-card-text", [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "display-1 font-weight-bold text-left"
+                          },
+                          [
+                            _vm._v(
+                              "\n                            Most Popular Locations for Sale in Lahore\n                        "
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.Islamabads, function(isb, i) {
+                        return _c(
+                          "v-card-text",
+                          { key: i },
+                          [
+                            _c("v-btn", { attrs: { text: "", to: "" } }, [
+                              _c("h5", [
+                                _vm._v(
+                                  "\n                            " +
+                                    _vm._s(isb) +
+                                    "\n                        "
+                                )
+                              ])
+                            ])
+                          ],
+                          1
+                        )
+                      })
+                    ],
+                    2
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-flex",
+                { attrs: { xm12: "", md4: "" } },
+                [
+                  _c(
+                    "v-card",
+                    {
+                      staticClass: "mx-2 px-2",
+                      attrs: { "max-width": "100%", "min-hight": "80%" }
+                    },
+                    [
+                      _c("v-card-text", [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "display-1 font-weight-bold text-left"
+                          },
+                          [
+                            _vm._v(
+                              "\n                            Most Popular Locations for Sale in Karchi\n                        "
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.Karchis, function(Kar, i) {
+                        return _c(
+                          "v-card-text",
+                          { key: i },
+                          [
+                            _c("v-btn", { attrs: { text: "", to: "" } }, [
+                              _c("h5", [
+                                _vm._v(
+                                  "\n                            " +
+                                    _vm._s(Kar) +
+                                    "\n                        "
+                                )
+                              ])
+                            ])
+                          ],
+                          1
+                        )
+                      })
+                    ],
+                    2
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "display-4 green white--text" }, [
-      _c("p", [_vm._v(" Welcome But Page")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -40025,28 +40569,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("nav-bar"),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "mx-4" },
-        [
-          _c("flex-image"),
-          _vm._v(" "),
-          _c("Grid-el"),
-          _vm._v(" "),
-          _c("slider-el"),
-          _vm._v(" "),
-          _c("footer-el", { staticClass: "py-4" })
-        ],
-        1
-      )
-    ],
-    1
-  )
+  return _c("div", [_c("flex-image"), _vm._v(" "), _c("Grid-el")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -93128,7 +93651,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_Buy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/pages/Buy */ "./resources/js/components/pages/Buy.vue");
 /* harmony import */ var _components_pages_Rent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/Rent */ "./resources/js/components/pages/Rent.vue");
 /* harmony import */ var _components_pages_Sale__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/Sale */ "./resources/js/components/pages/Sale.vue");
+/* harmony import */ var _components_pages_Welcome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/Welcome */ "./resources/js/components/pages/Welcome.vue");
 //MainPages
+
 
 
 
@@ -93146,6 +93671,9 @@ __webpack_require__.r(__webpack_exports__);
 }, {
   path: '/Agentfinder',
   component: _components_pages_AgentFinder__WEBPACK_IMPORTED_MODULE_1__["default"]
+}, {
+  path: '/',
+  component: _components_pages_Welcome__WEBPACK_IMPORTED_MODULE_5__["default"]
 }]);
 
 /***/ }),

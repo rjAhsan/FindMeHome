@@ -1,12 +1,11 @@
 <template>
       <div>
-         <nav-bar></nav-bar>
-         <div class="mx-4">
+
+
          <flex-image ></flex-image>
          <Grid-el></Grid-el>
-         <slider-el></slider-el>
-         <footer-el class="py-4"></footer-el>
-        </div>
+
+
      </div>
 
 </template>

@@ -1,9 +1,19 @@
 <template>
-    <v-carousel
+
+   <v-card
+           class="mx-2 px-2 py-4"
+           max-width="100%"
+           min-hight="80%"
+   >
+   <vv-card-text
+       <div class="text-center display-3 text-bold">Titanium Agencies</div>
+   </v-card-text>
+       <v-carousel
             cycle
-            height="400"
+            height="250"
             hide-delimiter-background
             show-arrows-on-hover
+            class="py-3"
     >
         <v-carousel-item
                 v-for="(slide, i) in slides"
@@ -23,6 +33,8 @@
             </v-sheet>
         </v-carousel-item>
     </v-carousel>
+   </v-card>
+
 </template>
 
 <script>
@@ -37,11 +49,11 @@
                     'deep-purple accent-4',
                 ],
                 slides: [
-                    'First',
-                    'Second',
-                    'Third',
-                    'Fourth',
-                    'Fifth',
+                    'First-Agencies',
+                    'Second-Agencies',
+                    'Third-Agencies',
+                    'Fourth-Agencies',
+                    'Fifth-Agencies',
                 ],
 
             }
